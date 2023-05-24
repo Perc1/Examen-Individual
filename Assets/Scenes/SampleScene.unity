@@ -221,7 +221,7 @@ RectTransform:
   - {fileID: 2060610359}
   - {fileID: 2020908600}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -374,7 +374,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -480,6 +480,7 @@ GameObject:
   - component: {fileID: 722255140}
   - component: {fileID: 722255139}
   - component: {fileID: 722255138}
+  - component: {fileID: 722255141}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Untagged
@@ -590,6 +591,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722255136}
   m_CullTransparentMesh: 1
+--- !u!114 &722255141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722255136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c961cb365fa05441a3e0bae42332aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrement: 1
 --- !u!1 &838372829
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +616,7 @@ GameObject:
   - component: {fileID: 838372833}
   - component: {fileID: 838372832}
   - component: {fileID: 838372831}
+  - component: {fileID: 838372834}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -712,6 +727,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838372829}
   m_CullTransparentMesh: 1
+--- !u!114 &838372834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838372829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f5cee9ca009eb40983a9c282408fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrement: 2
 --- !u!1 &1122956688
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1488912161}
+  - component: {fileID: 1488912162}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -815,14 +844,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488912160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 715.63794, y: 205.32568, z: -1.7044331}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488912162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488912160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b72fdbe4e78fc48bf31ea0e77c07c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 2020908601}
 --- !u!1 &2019809593
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +957,7 @@ GameObject:
   - component: {fileID: 2020908602}
   - component: {fileID: 2020908601}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,6 +1037,7 @@ GameObject:
   - component: {fileID: 2060610362}
   - component: {fileID: 2060610361}
   - component: {fileID: 2060610360}
+  - component: {fileID: 2060610363}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -1105,3 +1148,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060610358}
   m_CullTransparentMesh: 1
+--- !u!114 &2060610363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060610358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5afb9f2e45fc844d96e446202459557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreIncrement: 3
